@@ -1,0 +1,28 @@
+td:not(.search), th {
+  width: 150px;
+  padding: 0 10px;
+}
+
+table > tr {
+  position: fixed;
+}
+
+tr {
+    border: 1px solid black;
+}
+
+.search {
+    width: 100%;
+}
+
+.search > div > label {
+    display: none;
+}
+
+.search > .form-group {
+    margin: 0;
+}
+
+td > a {
+    color: black;
+}

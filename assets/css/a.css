@@ -1,0 +1,268 @@
+@media (max-width: 768px) {
+    .info {
+        margin-bottom: 20px;
+    }
+}
+
+.btn {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.form-group > div > label {
+  width: 100px;
+}
+
+.content1 {
+  text-align: center;
+}
+
+.form-group {
+  position: relative;
+  margin-top: 50px;
+}
+
+#tekstPompen, #zelfaanzuigendePompContainer {
+  float: left;
+}
+
+#tekstEnFoto {
+  display: inline-block;
+  width : 100%;
+}
+
+@media (min-width: 768px) {
+  #tekstPompen {
+    width: 60%;
+  }
+
+  #zelfaanzuigendePompContainer {
+    width: 40%;
+  }
+
+  #zelfaanzuigendePomp {
+    margin: 5%;
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  #tekstPompen, #zelfaanzuigendePompContainer, #zelfaanzuigendePomp {
+    width: 100%;
+  }
+
+  #zelfaanzuigendePomp {
+    margin-bottom: 10px;
+  }
+}
+
+.content {
+  margin-top: 120px;
+  background-color: #fbfbfb;
+}
+
+@media (max-width: 768px) {
+  .content {
+    margin-top: 64px;
+  }
+}
+
+body {
+  font-family: Circular, Helvetica;
+  background-color: #eeeeee;
+  font-size: 20px;
+}
+
+.navbar,
+.nav,
+.navbar-nav > li, .footer {
+  font-weight: 500;
+  background-color: #eeeeee;
+}
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+.navbar {
+  margin-bottom: 0;
+  border: 0;
+}
+.carousel-caption, .caption {
+  position: absolute;
+  top: 40%;
+  height: 100%;
+  font-size: 2.5vw;
+  font-weight: 500;
+}
+
+.caption {
+  margin: 0;
+  color: white;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+.full_image_container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.full_image {
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.contact_icon {
+  width: 75px;
+  margin-bottom: 10px;
+}
+
+.contact_item {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.map {
+  width: 100%;
+  padding-top: 15px;
+  border: 0;
+}
+
+.footer {
+  color: #777;
+}
+
+#pomptypes {
+  margin-bottom: 25px;
+}
+
+.project-image {
+  margin: auto;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 150px;
+}
+
+@media (max-width: 768px) {
+  .arrow {
+    height: 50px;
+  }
+  .caption {
+    font-size: 4vw;
+  }
+  .carousel-caption {
+    font-size: 6vw;
+  }
+}
+
+/*upload page*/
+.center {
+  margin: auto;
+}
+
+#image {
+  margin: auto;
+}
+
+.projecten {
+  margin: 0 50px;
+}
+
+/*Keep projects in projecten*/
+.projecten:after {
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.project {
+  float: left;
+  margin: 0 20px;
+  width: 200px;
+}
+
+.project > img {
+  width : 200px;
+}
+
+img.deleteProject {
+  width: 25px;
+}
+
+.top20 {
+  margin-top: 20px;
+}
+
+.bootstrap-datetimepicker-widget table td:not(.disabled):not(:first-child),
+.bootstrap-datetimepicker-widget table td:not(.disabled):not(:first-child):hover {
+    background-color: #a6ff4d;
+    font-weight:bold;
+}
+
+.logo {
+  height: 100%;
+}
+
+.navbar {
+  min-height: 80px;
+}
+
+.navbar-brand {
+  height: 120px;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    /* (80px - line-height of 27px) / 2 = 26.5px */
+    padding-top: 26.5px;
+    padding-bottom: 26.5px;
+    line-height: 27px;
+  }
+}
+
+.hdpe-recyle {
+  float: right;
+  width: 20%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.color-white {
+  color: white;
+}
+
+.color-white:hover {
+  color: white;
+}

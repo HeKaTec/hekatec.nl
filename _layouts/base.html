@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include csp.html %}
+    <title>{{ page.title | default: "HeKaTec" }}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link href="{{ "/assets/css/a.css" | relative_url }}" rel="stylesheet">
+    {% for css in page.css %}
+      <link href="{{ "/assets/css/" | append: css | relative_url }}" rel="stylesheet">
+    {% endfor %}
+  </head>
+  <body>
+    <div class="nav-area">
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header pull-left">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-items">
+              <span class="toggle-text">
+                Menu <i class="fa fa-caret-down"></i>
+              </span>
+            </button>
+             <a class="navbar-brand" href="{{ "/" | relative_url }}"><img class="logo" src="{{ "/assets/img/HeKaTec.png" | relative_url }}"></a>
+          </div>
+          <div class="navbar-header pull-right">
+            <a class="navbar-brand" href="{{ "/" | relative_url }}"><img class="logo" src="{{ "/assets/img/HeKaTrade.png" | relative_url }}"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="menu-items">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="{{ "/" | reatlive_url }}">Home</a>
+              </li>
+              <li>
+                <a href="{{ "/watermeters" | relative_url }}">Watermeters</a>
+              </li>
+              <li>
+                <a href="{{ "/pompen" | relative_url }}">Pompen</a>
+              </li>
+              <li>
+                <a href="{{ "/rvs" | relative_url }}">RVS</a>
+              </li>
+              <li>
+                <a href="{{ "/hdpe" | relative_url }}">HDPE</a>
+              </li>
+              <li>
+                <a href="{{ "/aluminium" | relative_url }}">Aluminium</a>
+              </li>
+              <li>
+                <a href="{{ "/irrigatie" | relative_url }}">Irrigatie</a>
+              </li>
+              <li>
+                <a href="{{ "/industrie" | relative_url }}">Industrie</a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/hekatec" target="_blank">Nieuws</a>
+              </li>
+              <li>
+                <a href="{{ "/contact" | relative_url }}">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="content">
+        {{ content }}
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 contact_item">
+            <div class="center">
+              <img src="{{ "/assets/img/icons/phone.png" | relative_url }}" class="contact_icon">
+              <div>
+                <a href="tel:+31611434660">06 11 43 46 60</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 contact_item">
+            <div class="center">
+              <img src="{{ "/assets/img/icons/mail.png" | relative_url }}" class="contact_icon">
+              <div>
+                <a href="mailto:info@hekatec.nl">info@hekatec.nl</a><br/>
+                <a href="mailto:facturen@hekatec.nl">facturen@hekatec.nl</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 contact_item">
+            <div class="center">
+              <img src="{{ "/assets/img/icons/location.png" | relative_url }}" class="contact_icon">
+              <div>
+                Bezoekadres:<br/>
+                <a href="https://www.google.com/maps/place/HeKaTec+Installatietechniek/@52.01135,4.27209,15z/data=!4m2!3m1!1s0x0:0xf1752eb410125455?hl=en-US" target="_blank">
+                  Maasdijkseweg 122<br/>
+                  2291 PJ Wateringen
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 contact_item">
+            <div class="center">
+              <img src="{{ "/assets/img/icons/location.png" | relative_url }}" class="contact_icon">
+              <div>
+                Factuuradres:<br/>
+                Maasdijkseweg 122<br/>
+                2291 PJ Wateringen
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script type="text/javascript" src="{{ "/assets/js/a.js" | relative_url }}"></script>
+  </body>
+</html>
